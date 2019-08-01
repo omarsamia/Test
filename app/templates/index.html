@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Song Generator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+                        <h1>Song Generator</h1>
+                        <h2>Pick a genre of your choice</h2>
+                        <form method="post" action="/results">
+                          <select name = "Genres">
+                            <option value="Rap">Rap</option>
+                            <option value="Pop">Pop</option>
+                            <option value="R&B">R&B</option>
+                            <option value="Trap">Trap</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Alternative">Alternative</option>
+                            <option value="Classical">Classical</option>
+                            <option value="Soul">Soul</option>
+                            <option value="Indie">Indie</option> 
+                            <option value="Acoustic">Acoustic</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Country">Country</option>
+                          </select>
+                          <br><br>
+                          <input type="submit" value="submit">
+                        </form>  
+                    </header>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
