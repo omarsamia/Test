@@ -69,7 +69,7 @@
 						<h2>Playlist</h2>
 						{% for thing in songs %}
 							<li><a href="{{thing.link}}">{{thing.name}} - {{thing.artists}} </a></li>
-							<img src= "{{thing.pic}}">
+							<img class= "pics" src= "{{thing.images}}">
 						{% endfor %}
 					</ul>
 				</div>
@@ -140,7 +140,7 @@
 		<!--	</ul>-->
 		<!--</section>-->
 
-		Scripts
+		<!--Scripts-->
 		<script src="static/assets/resultjs/jquery.min.js"></script>
 		<script src="static/assets/resultjs/jquery.scrolly.min.js"></script>
 		<script src="static/assets/resultjs/browser.min.js"></script>

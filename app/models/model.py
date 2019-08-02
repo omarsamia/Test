@@ -19,10 +19,10 @@ pop_song_list=[]
 for item in pop_song_results['tracks']['items']:
     pop_song_list.append({'name':item['name'], 'artists':item['artists'][0]['name'], 'link':item['external_urls']['spotify'], 'images':item['album']['images'][0]['url']})
         
-randb_song_results=sp.search(q='genre:' + "randb", type='track', limit=10)
-randb_song_list=[]
-for item in randb_song_results['tracks']['items']:
-    randb_song_list.append({'name':item['name'], 'artists':item['artists'][0]['name'], 'link':item['external_urls']['spotify'], 'images':item['album']['images'][0]['url']})
+jazz_song_results=sp.search(q='genre:' + "jazz", type='track', limit=10)
+jazz_song_list=[]
+for item in jazz_song_results['tracks']['items']:
+    jazz_song_list.append({'name':item['name'], 'artists':item['artists'][0]['name'], 'link':item['external_urls']['spotify'], 'images':item['album']['images'][0]['url']})
     
     
 trap_song_results=sp.search(q='genre:' + "trap", type='track', limit=10)
@@ -47,10 +47,10 @@ country_song_list = []
 for item in country_song_results['tracks']['items']:
     country_song_list.append({'name': item['name'], "artists": item['artists'][0]['name'], "Link": item['external_urls']['spotify'], "images": item['album']['images'][0]['url']})
     
-electrical_song_results = sp.search(q='genre:' + "electrical", type='track', limit = 10)
-electrical_song_list = []
-for item in electrical_song_results['tracks']['items']:
-    electrical_song_list.append({'name': item['name'], "artists": item['artists'][0]['name'], "Link": item['external_urls']['spotify'], "images": item['album']['images'][0]['url']})
+electronic_song_results = sp.search(q='genre:' + "electronic", type='track', limit = 10)
+electronic_song_list = []
+for item in electronic_song_results['tracks']['items']:
+    electronic_song_list.append({'name': item['name'], "artists": item['artists'][0]['name'], "Link": item['external_urls']['spotify'], "images": item['album']['images'][0]['url']})
     
 alternative_song_results = sp.search(q='genre:' + 'alternative', type='track', limit = 10)
 alternative_song_list = []
@@ -75,8 +75,4 @@ soul_song_list = []
 for item in soul_song_results['tracks']['items']:
     soul_song_list.append({'name':item['name'], 'artists':item['artists'][0]['name'],'link':item['external_urls']['spotify'], 'images':item['album']['images'][0]['url']})
 
-all_songs = {'Rap': rap_song_list, 'Pop': pop_song_list, 'R&B': randb_song_list, 'Trap': trap_song_list, 'Rock': rock_song_list, 'Alternative': alternative_song_list, 'Classical': classical_song_list, 'Soul': soul_song_list, 'Indie':indie_song_list, 'Electrical':electrical_song_list, 'Country':country_song_list, 'Folk':folk_song_list}
-
-
-
-"L "
+all_songs = {'Rap': rap_song_list, 'Pop': pop_song_list, 'Jazz': jazz_song_list, 'Trap': trap_song_list, 'Rock': rock_song_list, 'Alternative': alternative_song_list, 'Classical': classical_song_list, 'Soul': soul_song_list, 'Indie':indie_song_list, 'Electronic':electronic_song_list, 'Country':country_song_list, 'Folk':folk_song_list}

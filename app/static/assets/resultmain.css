@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+.pics {
+	width: 30%;
+  	height: 30%;
+}
+
 ol, ul {
 	list-style: none;
 }
