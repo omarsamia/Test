@@ -68,7 +68,7 @@
 						</header>
 						<h2>Playlist</h2>
 						{% for thing in songs %}
-							<li><a href="{{thing.song}}">{{thing.name}} - {{thing.artist}} </a></li>
+							<li><a href="{{thing.link}}">{{thing.name}} - {{thing.artists}} </a></li>
 							<img src= "{{thing.pic}}">
 						{% endfor %}
 					</ul>
